@@ -5,6 +5,53 @@
 	<title>Request a quote</title>
 </head>
 <body>
+
+<!-- Header -->	
+	<header>
+		<h1 id="masthead"> Sleeping Beauty</h1>
+			<p class=subtitle>Entrepreneurial Assistant</p>
+
+		<nav>
+			<ul>
+				<li><a href="about.html"> About </a></li>
+				<li> <a href="portfolio.html">Portfolio</a></li>
+				<li> <a href="services.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- end header -->
+
+<!-- Main content -->	
+
+	<form action="http://www.example.com/subscribe.php" method="post">
+		<p>Name:</p>	
+		<input type="text" name="first-name" id="name">
+		<p>Email:</p>
+		<input type="email" name="email" id="email">
+		<p>Project Name</p>
+		<input type="text" name="project-name" id="project-name">
+		<p>Duration</p>
+		<select name="duration" id="duration">
+			<option value="less-2">Small project: less than 2 weeks</option>
+			<option value="2-4">Medium-sized project: 2-4 weeks</option>
+			<option value="ongoing">Ongoing project</option>
+		</select>
+		<p>Other</p>
+		<p><input type="text" name="other" id="other"></p>
+		
+		<textarea name="service-req" id="service-req" cols="30" rows="10">Describe the service you require...
+		</textarea>
+		<p>
+		<input type="submit" name="send" value="Send">
+		</p>
+
+
+
+
+
+	</form>
 	
 </body>
 </html>
