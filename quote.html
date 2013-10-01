@@ -13,9 +13,11 @@
 
 		<nav>
 			<ul>
+				<li> <a href="home.html">Home</a></li>
 				<li><a href="about.html"> About </a></li>
 				<li> <a href="portfolio.html">Portfolio</a></li>
 				<li> <a href="services.html">Services</a></li>
+				<li> <a href="quote.html">Request a quote</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
@@ -25,33 +27,34 @@
 
 <!-- Main content -->	
 
-	<form action="http://www.example.com/subscribe.php" method="post">
-		<p>Name:</p>	
-		<input type="text" name="first-name" id="name">
-		<p>Email:</p>
-		<input type="email" name="email" id="email">
-		<p>Project Name</p>
-		<input type="text" name="project-name" id="project-name">
-		<p>Duration</p>
-		<select name="duration" id="duration">
-			<option value="less-2">Small project: less than 2 weeks</option>
-			<option value="2-4">Medium-sized project: 2-4 weeks</option>
-			<option value="ongoing">Ongoing project</option>
-		</select>
-		<p>Other</p>
-		<p><input type="text" name="other" id="other"></p>
-		
-		<textarea name="service-req" id="service-req" cols="30" rows="10">Describe the service you require...
-		</textarea>
-		<p>
-		<input type="submit" name="send" value="Send">
-		</p>
+	<form action="http://www.example.com/subscribe.php" method="get">
+		<fieldset>
+			<legend>Your details:</legend>
+				<label>Name:	
+					<input type="text" name="first-name" id="name"></label>
+				<label>Email:
+					<input type="email" name="email" id="email"></label>
+				<label> Project Name 
+					<input type="text" name="project-name" id="project-name"></label>
+				<label for="duration"> Duration </label>
+					<select name="duration" id="duration">
+						<option value="less-2">Small project: less than 2 weeks</option>
+						<option value="2-4">Medium-sized project: 2-4 weeks</option>
+						<option value="ongoing">Ongoing project</option>
+					</select>
+				<label> Other 
+					<input type="text" name="other" id="other"></label>
+				
+				<p><label>Describe the service you require:</label></p>
+					<p> <textarea name="service-req" id="service-req" cols="100" rows="10">
+					</textarea></p>
+				<p>
+					<input type="submit" name="send" value="Send">
+				</p>
 
-
-
-
-
-	</form>
+		</fieldset>
+</form>
+<!-- End main content -->
 	
 </body>
 </html>
